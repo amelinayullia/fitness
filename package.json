@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/amelinayullia/fitness.git"
   },
   "author": "Amelina Julia",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/amelinayullia/fitness/issues"
   },
   "browserslist": [
     "last 2 versions",

@@ -1,4 +1,4 @@
-# Bicycles project 
+# Fitness project 
 
 ## Краткая инструкция по работе
 
