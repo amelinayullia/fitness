@@ -2,6 +2,7 @@
   "extends": "stylelint-config-htmlacademy",
   "rules": {
     "declaration-no-important": true,
+    "function-comma-space-after": "never",
     "indentation": [2, {"ignore": ["inside-parens"]}]
   }
 }
