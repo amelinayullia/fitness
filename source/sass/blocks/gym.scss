@@ -109,6 +109,21 @@
   top: -112px;
   left: -63px;
 
+  picture {
+    position: relative;
+
+    &::after {
+      content: "";
+      background: rgba(20,54,122,0.5);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+
   a {
     position: absolute;
     width: 70px;
@@ -120,6 +135,7 @@
     transform: translate(-50%,-50%);
     transform-origin: left;
     transition: all 0.3s;
+    z-index: 2;
     cursor: pointer;
 
     &:hover {
@@ -144,9 +160,9 @@
     &::before {
       width: 100px;
       height: 100px;
-      border-radius: 50%;
-      border: 1px solid $gray;
-      background: transparent;
+      background-image: url("../img/icon-linear-gradient.svg");
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
     &::after {
@@ -169,8 +185,7 @@
       left: 50%;
 
       &::before {
-        width: 73px;
-        height: 73px;
+        background-size: 73px;
       }
 
       &::after {
