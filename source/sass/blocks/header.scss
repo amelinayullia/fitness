@@ -38,6 +38,12 @@
   }
 }
 
+.header__line,
+.header__main {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
 .header__line {
   display: flex;
   justify-content: space-between;
