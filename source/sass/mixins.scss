@@ -22,4 +22,9 @@
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+
+  &:hover {
+    border-color: $grayish-blue;
+    color: $grayish-blue;
+  }
 }

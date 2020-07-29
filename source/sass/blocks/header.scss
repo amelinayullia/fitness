@@ -238,3 +238,10 @@
     display: none;
   }
 }
+
+.header__line a,
+.header__social a {
+  &:hover {
+    color: $light-dark-blue;
+  }
+}
