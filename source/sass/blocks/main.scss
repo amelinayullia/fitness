@@ -1,0 +1,29 @@
+.main {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/discs@1x.png");
+    background-repeat: no-repeat;
+    top: 1264px;
+    right: 0;
+    width: 285px;
+    height: 415px;
+  }
+
+  @media (max-width: $bp-tablet) {
+    &::after {
+      background-image: url("../img/discs-tablet@1x.png");
+      top: 2315px;
+      width: 348px;
+      height: 373px;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    &::after {
+      content: none;
+    }
+  }
+}
