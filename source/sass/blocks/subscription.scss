@@ -105,6 +105,13 @@
     background-color: $white;
     position: relative;
 
+    &.active {
+      border-image-source: linear-gradient(111.72deg,$vivid-red 17.6%,$strong-blue 95.31%);
+      border-image-slice: 1;
+      border-width: 7px;
+      border-style: solid;
+    }
+
     &::before {
       content: "5000";
       position: absolute;
@@ -170,6 +177,12 @@
     letter-spacing: 0.3px;
     text-transform: uppercase;
     border: 2px solid $very-dark-blue;
+
+    &.active {
+      background: linear-gradient(111.72deg,$vivid-red 17.6%,$strong-blue 95.31%);
+      color: $white;
+      border: none;
+    }
   }
 
   @media (max-width: $bp-tablet) {
