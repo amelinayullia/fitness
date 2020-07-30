@@ -57,8 +57,14 @@
     cursor: pointer;
     border-bottom: 2px solid transparent;
 
-    &:hover {
+    &.active {
       border-bottom: 2px solid $vivid-red;
+    }
+
+    &:hover {
+      button {
+        color: lighten($very-dark-blue,15);
+      }
     }
 
     &:nth-last-of-type(1) {
@@ -70,6 +76,8 @@
     background: none;
     border: none;
     padding: 0;
+    pointer-events: none;
+    user-select: none;
   }
 
   @media (max-width: $bp-tablet) {
@@ -105,13 +113,17 @@
   }
 }
 
-.subscription__about {
+.subscription__about-tab {
   margin-top: 40px;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   z-index: 1;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
 
   li {
     display: flex;
@@ -142,7 +154,7 @@
       font-family: $Roboto-Condensed;
       font-weight: 700;
       opacity: 0.48;
-      top: 135px;
+      top: 128px;
     }
 
     &:nth-child(2n) {
@@ -233,7 +245,7 @@
       &::before {
         font-size: 80px;
         line-height: 120px;
-        top: 118px;
+        top: 111px;
       }
     }
 
@@ -254,6 +266,46 @@
 
     a {
       margin-top: 30px;
+    }
+  }
+}
+
+.subscription__about-tab--2 {
+  li {
+    &::before {
+      content: "7000";
+    }
+
+    &:nth-child(2n) {
+      &::before {
+        content: "3700";
+      }
+    }
+
+    &:nth-child(3n) {
+      &::before {
+        content: "4700";
+      }
+    }
+  }
+}
+
+.subscription__about-tab--3 {
+  li {
+    &::before {
+      content: "9000";
+    }
+
+    &:nth-child(2n) {
+      &::before {
+        content: "5700";
+      }
+    }
+
+    &:nth-child(3n) {
+      &::before {
+        content: "7700";
+      }
     }
   }
 }

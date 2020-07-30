@@ -125,18 +125,18 @@
       <section class="subscription">
         <h2>Абонементы</h2>
         <ul class="subscription__time">
-          <li>
+          <li class="active" data-tab="1">
             <button type="button">1 месяц</button>
           </li>
-          <li>
+          <li data-tab="2">
             <button type="button">6 месяцев</button>
           </li>
-          <li>
+          <li data-tab="3">
             <button type="button">12 месяцев</button>
           </li>
         </ul>
 
-        <ul class="subscription__about container">
+        <ul class="subscription__about-tab subscription__about-tab--1 container active" data-list="1">
           <li>
             <h3>С тренером</h3>
             <span>12 занятий</span>
@@ -156,8 +156,51 @@
             <a href="#">купить абонемент</a>
           </li>
         </ul>
+
+        <ul class="subscription__about-tab subscription__about-tab--2 container" data-list="2">
+          <li>
+            <h3>С тренером</h3>
+            <span>12 занятий</span>
+            <p>7000 <span>&#8381;</span></p>
+            <a href="#">купить абонемент</a>
+          </li>
+          <li>
+            <h3>Дневной</h3>
+            <span>с 8:00 до 17:00</span>
+            <p>3700 <span>&#8381;</span></p>
+            <a href="#">купить абонемент</a>
+          </li>
+          <li>
+            <h3>Полный день</h3>
+            <span>с 8:00 до 22:00</span>
+            <p>4700 <span>&#8381;</span></p>
+            <a href="#">купить абонемент</a>
+          </li>
+        </ul>
+
+        <ul class="subscription__about-tab subscription__about-tab--3 container" data-list="3">
+          <li>
+            <h3>С тренером</h3>
+            <span>12 занятий</span>
+            <p>9000 <span>&#8381;</span></p>
+            <a href="#">купить абонемент</a>
+          </li>
+          <li>
+            <h3>Дневной</h3>
+            <span>с 8:00 до 17:00</span>
+            <p>5700 <span>&#8381;</span></p>
+            <a href="#">купить абонемент</a>
+          </li>
+          <li>
+            <h3>Полный день</h3>
+            <span>с 8:00 до 22:00</span>
+            <p>7700 <span>&#8381;</span></p>
+            <a href="#">купить абонемент</a>
+          </li>
+        </ul>
       </section>
     </main>
+    <script src="./js/main.js"></script>
   </body>
 
 </html>
