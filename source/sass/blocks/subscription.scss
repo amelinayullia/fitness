@@ -37,7 +37,16 @@
   @include list-reset;
   display: flex;
   margin-top: 39px;
-  border-bottom: 2px solid rgba(120,120,120,0.2);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 335px;
+    top: 41px;
+    background-color: rgba(120,120,120,0.2);
+  }
 
   li {
     margin-right: 46px;
@@ -46,8 +55,9 @@
     opacity: 0.5;
     padding-bottom: 11px;
     cursor: pointer;
+    border-bottom: 2px solid transparent;
 
-    &.active {
+    &:hover {
       border-bottom: 2px solid $vivid-red;
     }
 
@@ -65,6 +75,11 @@
   @media (max-width: $bp-tablet) {
     margin-top: 32px;
 
+    &::before {
+      width: 333px;
+      top: 38px;
+    }
+
     li {
       font-size: 18px;
       line-height: 27px;
@@ -75,6 +90,11 @@
   @media (max-width: $bp-mobile) {
     margin: 0 15px;
     margin-top: 24px;
+
+    &::before {
+      width: 288px;
+      top: 37px;
+    }
 
     li {
       font-size: 16px;
@@ -99,13 +119,14 @@
     align-items: center;
     flex-basis: 300px;
     flex-grow: 1;
-    padding-top: 55px;
-    padding-bottom: 67px;
+    padding-top: 48px;
+    padding-bottom: 60px;
     margin-right: 40px;
     background-color: $white;
     position: relative;
+    border: 7px solid white;
 
-    &.active {
+    &:hover {
       border-image-source: linear-gradient(111.72deg,$vivid-red 17.6%,$strong-blue 95.31%);
       border-image-slice: 1;
       border-width: 7px;
@@ -176,12 +197,12 @@
     line-height: 14px;
     letter-spacing: 0.3px;
     text-transform: uppercase;
-    border: 2px solid $very-dark-blue;
+    box-shadow: 0 0 0 2px $very-dark-blue;
 
-    &.active {
+    &:hover {
       background: linear-gradient(111.72deg,$vivid-red 17.6%,$strong-blue 95.31%);
       color: $white;
-      border: none;
+      box-shadow: none;
     }
   }
 
@@ -195,7 +216,8 @@
       margin-bottom: 40px;
       min-width: 442px;
       flex-grow: 0;
-      padding-top: 57px;
+      padding-top: 50px;
+      padding-bottom: 63px;
     }
   }
 
@@ -204,8 +226,8 @@
 
     li {
       min-width: 290px;
-      padding-top: 52px;
-      padding-bottom: 52px;
+      padding-top: 45px;
+      padding-bottom: 49px;
       margin-bottom: 36px;
 
       &::before {
@@ -229,7 +251,6 @@
         font-size: 46px;
       }
     }
-
 
     a {
       margin-top: 30px;
