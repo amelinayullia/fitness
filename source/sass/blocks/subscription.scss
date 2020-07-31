@@ -38,6 +38,7 @@
   display: flex;
   margin-top: 39px;
   position: relative;
+  flex-wrap: wrap;
 
   &::before {
     content: "";
