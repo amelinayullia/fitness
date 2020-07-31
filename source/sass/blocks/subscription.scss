@@ -126,7 +126,7 @@
     position: absolute;
     background-image: url("../img/discs@1x.png");
     background-repeat: no-repeat;
-    top: 220px;
+    bottom: -175px;
     right: -140px;
     width: 427px;
     height: 415px;
@@ -149,6 +149,7 @@
     background-color: $white;
     position: relative;
     border: 7px solid white;
+    margin-bottom: 20px;
 
     &:hover {
       border-image-source: linear-gradient(111.72deg,$vivid-red 17.6%,$strong-blue 95.31%);
@@ -177,13 +178,12 @@
     }
 
     &:nth-child(3n) {
+      margin-right: 0;
+
       &::before {
         content: "2700";
+        margin-right: 0;
       }
-    }
-
-    &:nth-last-of-type(1) {
-      margin: 0;
     }
   }
 
@@ -238,7 +238,7 @@
 
     &::after {
       background-image: url("../img/discs-tablet@1x.png");
-      top: 1205px;
+      bottom: -155px;
       right: -102px;
     }
 
