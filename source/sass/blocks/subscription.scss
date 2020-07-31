@@ -118,6 +118,19 @@
   width: 100%;
   z-index: 1;
   display: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/discs@1x.png");
+    background-repeat: no-repeat;
+    top: 220px;
+    right: -140px;
+    width: 427px;
+    height: 415px;
+    z-index: -1;
+  }
 
   &.active {
     display: flex;
@@ -222,6 +235,12 @@
     align-items: center;
     margin-top: 45px;
 
+    &::after {
+      background-image: url("../img/discs-tablet@1x.png");
+      top: 1205px;
+      right: -102px;
+    }
+
     li {
       margin: 0;
       margin-bottom: 40px;
@@ -238,6 +257,10 @@
 
   @media (max-width: $bp-mobile) {
     margin-top: 34px;
+
+    &::after {
+      content: none;
+    }
 
     li {
       min-width: 290px;
