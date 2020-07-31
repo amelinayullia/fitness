@@ -190,8 +190,44 @@
           </li>
         </ul>
       </section>
+
+      <article class="promo container">
+        <div class="promo__about">
+          <div class="promo__inner">
+            <h2>SUPER GAMES</h2>
+            <div class="promo__time">
+              <div>
+                <span>Дата</span>
+                <time datetime="2019-03-07">7<span class="promo__data">Марта 2019</span></time>
+              </div>
+              <div>
+                <span>Время</span>
+                <time datetime="2019-03-07T12:00">12:00</time>
+              </div>
+            </div>
+          </div>
+          <p>Ежегодные соревнования по CrossFit</p>
+          <a href="">заполнить заявку</a>
+        </div>
+
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="./img/photo-man-crossfit@1x.webp, ./img/photo-man-crossfit@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="./img/photo-man-crossfit-tablet@1x.webp, ./img/photo-man-crossfit-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="./img/photo-man-crossfit-mobile@1x.webp, ./img/photo-man-crossfit-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)"
+            srcset="./img/photo-man-crossfit@1x.jpg, ./img/photo-man-crossfit@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/photo-man-crossfit-tablet@1x.jpg, ./img/photo-man-crossfit-tablet@2x.jpg 2x">
+          <img src="./img/photo-man-crossfit-mobile@1x.jpg" srcset="./img/photo-man-crossfit-mobile@2x.jpg 2x"
+            width="290" height="292" alt="Фото мужчины спортсмена">
+        </picture>
+      </article>
     </main>
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
   </body>
 
 </html>
