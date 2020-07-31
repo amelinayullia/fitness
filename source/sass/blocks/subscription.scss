@@ -43,7 +43,7 @@
     content: "";
     position: absolute;
     height: 2px;
-    width: 335px;
+    width: 100%;
     top: 41px;
     background-color: rgba(120,120,120,0.2);
   }
@@ -84,7 +84,6 @@
     margin-top: 32px;
 
     &::before {
-      width: 333px;
       top: 38px;
     }
 
@@ -100,7 +99,6 @@
     margin-top: 24px;
 
     &::before {
-      width: 288px;
       top: 37px;
     }
 
@@ -155,6 +153,7 @@
       font-weight: 700;
       opacity: 0.48;
       top: 128px;
+      left: 72px;
     }
 
     &:nth-child(2n) {
@@ -230,6 +229,10 @@
       flex-grow: 0;
       padding-top: 50px;
       padding-bottom: 63px;
+
+      &::before {
+        left: 110px;
+      }
     }
   }
 
@@ -246,6 +249,7 @@
         font-size: 80px;
         line-height: 120px;
         top: 111px;
+        left: 58px;
       }
     }
 
