@@ -150,6 +150,9 @@
     position: relative;
     border: 7px solid white;
     margin-bottom: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 
     &:hover {
       border-image-source: linear-gradient(111.72deg,$vivid-red 17.6%,$strong-blue 95.31%);
@@ -168,7 +171,8 @@
       font-weight: 700;
       opacity: 0.48;
       top: 128px;
-      left: 72px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     &:nth-child(2n) {
@@ -184,6 +188,10 @@
         content: "2700";
         margin-right: 0;
       }
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 
@@ -249,10 +257,6 @@
       flex-grow: 0;
       padding-top: 50px;
       padding-bottom: 63px;
-
-      &::before {
-        left: 110px;
-      }
     }
   }
 
@@ -273,7 +277,6 @@
         font-size: 80px;
         line-height: 120px;
         top: 111px;
-        left: 58px;
       }
     }
 
