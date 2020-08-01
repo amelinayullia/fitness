@@ -161,33 +161,8 @@
       border-style: solid;
     }
 
-    &::before {
-      content: "5000";
-      position: absolute;
-      font-size: 100px;
-      line-height: 150px;
-      color: $very-light-gray;
-      font-family: $Roboto-Condensed;
-      font-weight: 700;
-      opacity: 0.48;
-      top: 128px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    &:nth-child(2n) {
-      &::before {
-        content: "1700";
-      }
-    }
-
     &:nth-child(3n) {
       margin-right: 0;
-
-      &::before {
-        content: "2700";
-        margin-right: 0;
-      }
     }
 
     &:last-child {
@@ -215,7 +190,23 @@
     font-size: 60px;
     line-height: 90px;
     color: $light-dark-blue;
-    z-index: 2;
+    z-index: 1;
+    position: relative;
+
+    &::before {
+      content: attr(price);
+      position: absolute;
+      font-size: 100px;
+      line-height: 150px;
+      color: $very-light-gray;
+      font-family: $Roboto-Condensed;
+      font-weight: 700;
+      opacity: 0.48;
+      top: -55px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
 
     span {
       color: $very-dark-blue;
@@ -272,12 +263,6 @@
       padding-top: 45px;
       padding-bottom: 49px;
       margin-bottom: 36px;
-
-      &::before {
-        font-size: 80px;
-        line-height: 120px;
-        top: 111px;
-      }
     }
 
     h3 {
@@ -290,6 +275,12 @@
       line-height: 72px;
       margin-top: 57px;
 
+      &::before {
+        font-size: 80px;
+        line-height: 120px;
+        top: -45px;
+      }
+
       span {
         font-size: 46px;
       }
@@ -297,46 +288,6 @@
 
     a {
       margin-top: 30px;
-    }
-  }
-}
-
-.subscription__about-tab--2 {
-  li {
-    &::before {
-      content: "7000";
-    }
-
-    &:nth-child(2n) {
-      &::before {
-        content: "3700";
-      }
-    }
-
-    &:nth-child(3n) {
-      &::before {
-        content: "4700";
-      }
-    }
-  }
-}
-
-.subscription__about-tab--3 {
-  li {
-    &::before {
-      content: "9000";
-    }
-
-    &:nth-child(2n) {
-      &::before {
-        content: "5700";
-      }
-    }
-
-    &:nth-child(3n) {
-      &::before {
-        content: "7700";
-      }
     }
   }
 }
