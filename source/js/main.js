@@ -1,4 +1,5 @@
-var subscriptionTimeElements = document.querySelectorAll('[data-tab]');
+var subscriptionTimeElements = document.querySelectorAll('.subscription__time button');
+var listItems = document.querySelectorAll('.subscription__time li');
 var tabs = document.querySelectorAll('[data-list]');
 
 var handleTabClick = function(evt) {
@@ -8,16 +9,15 @@ var handleTabClick = function(evt) {
   }
 
   for (let index = 0; index < subscriptionTimeElements.length; index++) {
-    subscriptionTimeElements[index].classList.remove('active');
+    listItems[index].classList.remove('active');
   }
 
-  var activeTab = document.querySelector('[data-list="' + evt.target.dataset.tab + '"]');
+  var activeTab = document.querySelector('[data-list="' + evt.target.parentNode.dataset.tab + '"]');
 
-  evt.target.classList.add('active');
+  evt.target.parentNode.classList.add('active');
   activeTab.classList.add('active');
 };
 
 for (let index = 0; index < subscriptionTimeElements.length; index++) {
   subscriptionTimeElements[index].addEventListener('click', handleTabClick)
 }
-
