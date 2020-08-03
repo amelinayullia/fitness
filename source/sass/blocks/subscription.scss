@@ -185,7 +185,7 @@
     position: relative;
 
     &::before {
-      content: attr(price);
+      content: attr(data-price);
       position: absolute;
       font-size: 100px;
       line-height: 150px;
