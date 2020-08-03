@@ -1,22 +1,39 @@
 .trainers {
   min-height: 515px;
+  position: relative;
 
   h2 {
     @include title;
     color: $very-dark-blue;
-    margin-bottom: 58px;
+    margin-bottom: 54px;
+  }
+
+  @media (max-width: $bp-tablet) {
+    min-height: 444px;
+
+    h2 {
+      margin-bottom: 47px;
+      font-size: 42px;
+      line-height: 34px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    min-height: 394px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 25px;
+      margin-bottom: 48px;
+    }
   }
 }
 
 .trainers__photos {
   @include list-reset;
-  display: flex;
-  width: 100%;
 
   li {
-    flex-basis: 200px;
-    flex-grow: 1;
-    margin-right: 40px;
     position: relative;
 
     &:nth-child(4n) {
@@ -39,7 +56,13 @@
 }
 
 .trainers__inner {
-  position: relative;
+  @media (max-width: $bp-tablet) {
+    margin: 0 55px;
+  }
+
+  @media (max-width: $bp-mobile) {
+    margin: 0 32px;
+  }
 }
 
 .trainers__button-previous,
@@ -47,23 +70,42 @@
   position: absolute;
   background-color: transparent;
   border: none;
-  border-top: 1px solid $gray;
-  border-right: 1px solid $gray;
-  width: 25px;
-  height: 25px;
+  padding: 0;
+  color: $gray;
+  top: 245px;
   cursor: pointer;
+
+  &::after {
+    font-size: 35px;
+  }
+
+  @media (max-width: $bp-tablet) {
+    top: 228px;
+  }
+
+  @media (max-width: $bp-mobile) {
+    top: 212px;
+
+    &::after {
+      font-size: 20px;
+    }
+  }
 }
 
 .trainers__button-previous {
-  top: 134px;
-  left: -52px;
-  transform: rotate(-135deg);
+  left: 41px;
+
+  @media (max-width: $bp-mobile) {
+    left: 6px;
+  }
 }
 
 .trainers__button-next {
-  top: 134px;
-  right: -52px;
-  transform: rotate(45deg);
+  right: 41px;
+
+  @media (max-width: $bp-mobile) {
+    right: 6px;
+  }
 }
 
 .trainers__hover {
@@ -99,6 +141,21 @@
     margin-bottom: 15px;
     list-style-type: disc;
   }
+
+  @media (max-width: $bp-tablet) {
+    ul {
+      margin-top: 38px;
+      padding-left: 21px;
+    }
+
+    li {
+      margin-bottom: 14px;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    padding-top: 41px;
+  }
 }
 
 .trainers__item {
@@ -109,6 +166,21 @@
 
     p {
       display: none;
+    }
+  }
+
+  @media (max-width: $bp-tablet) {
+    img {
+      width: 268px;
+      height: 294px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    img {
+      width: 226px;
+      height: 274px;
     }
   }
 }

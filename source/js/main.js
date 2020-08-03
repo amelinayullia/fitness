@@ -21,3 +21,24 @@ var handleTabClick = function(evt) {
 for (let index = 0; index < subscriptionTimeElements.length; index++) {
   subscriptionTimeElements[index].addEventListener('click', handleTabClick)
 }
+
+var swiper = new Swiper('.swiper-container', {
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0
+    }
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
