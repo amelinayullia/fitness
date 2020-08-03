@@ -1,44 +1,47 @@
-var subscriptionTimeElements = document.querySelectorAll('.subscription__time button');
-var listItems = document.querySelectorAll('.subscription__time li');
-var tabs = document.querySelectorAll('[data-list]');
+var subscriptionLinks = document.querySelectorAll(".subscription__time a");
+var subscriptionBlocks = document.querySelectorAll(".subscription__about-tab");
 
-var handleTabClick = function(evt) {
-  for (let index = 0; index < tabs.length; index++) {
-    tabs[index].classList.remove('active');
-
-  }
-
-  for (let index = 0; index < subscriptionTimeElements.length; index++) {
-    listItems[index].classList.remove('active');
-  }
-
-  var activeTab = document.querySelector('[data-list="' + evt.target.parentNode.dataset.tab + '"]');
-
-  evt.target.parentNode.classList.add('active');
-  activeTab.classList.add('active');
+var hideLinksActiveClass = function () {
+  Array.prototype.forEach.call(subscriptionLinks, function (link) {
+    link.classList.remove("active");
+  });
 };
 
-for (let index = 0; index < subscriptionTimeElements.length; index++) {
-  subscriptionTimeElements[index].addEventListener('click', handleTabClick)
+var hideBlocks = function () {
+  Array.prototype.forEach.call(subscriptionBlocks, function (block) {
+    block.classList.remove("active");
+  });
+};  
+
+if (subscriptionLinks.length) {
+  Array.prototype.forEach.call(subscriptionLinks, function (link, index) {
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      hideLinksActiveClass();
+      hideBlocks();
+      link.classList.add("active");
+      subscriptionBlocks[index].classList.add("active");
+    });
+  });
 }
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper(".swiper-container", {
   breakpoints: {
     1200: {
       slidesPerView: 4,
-      spaceBetween: 40
+      spaceBetween: 40,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 30
+      spaceBetween: 30,
     },
     320: {
       slidesPerView: 1,
-      spaceBetween: 0
-    }
+      spaceBetween: 0,
+    },
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
