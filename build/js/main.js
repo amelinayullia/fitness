@@ -11,7 +11,7 @@ var hideBlocks = function () {
   Array.prototype.forEach.call(subscriptionBlocks, function (block) {
     block.classList.remove("active");
   });
-};  
+};
 
 if (subscriptionLinks.length) {
   Array.prototype.forEach.call(subscriptionLinks, function (link, index) {
@@ -41,7 +41,7 @@ var swiper = new Swiper(".swiper-container", {
     },
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".trainers__button-next",
+    prevEl: ".trainers__button-previous",
   },
 });
