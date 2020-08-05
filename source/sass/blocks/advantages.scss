@@ -7,6 +7,7 @@
   align-items: center;
   padding-top: 118px;
   padding-bottom: 118px;
+  max-width: 100%;
 
   h2 {
     @include title;
@@ -147,8 +148,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 108px;
     height: 100%;
+    background-size: contain;
   }
 
   h3 {
@@ -171,6 +173,10 @@
       background-image: url("../img/icon-900@1x.png");
       background-repeat: no-repeat;
       left: 26px;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/icon-900@2x.png");
+      }
     }
   }
 
@@ -182,6 +188,10 @@
       background-repeat: no-repeat;
       left: 20px;
       top: 8px;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/icon-350@2x.png");
+      }
     }
   }
 
@@ -189,6 +199,11 @@
     &::before {
       background-image: url("../img/icon-70@1x.png");
       background-repeat: no-repeat;
+      width: 71px;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/icon-70@2x.png");
+      }
     }
   }
 
@@ -197,6 +212,11 @@
       background-image: url("../img/icon5@1x.png");
       background-repeat: no-repeat;
       top: 8px;
+      width: 71px;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/icon5@2x.png");
+      }
     }
   }
 
@@ -207,6 +227,10 @@
       margin: 0;
     }
 
+    &::before {
+      width: 89px;
+    }
+
     &--space {
       padding-left: 116px;
       padding-right: 22px;
@@ -215,6 +239,10 @@
         background-image: url("../img/icon-900-tablet@1x.png");
         left: 0;
         top: 5px;
+
+        @media (min-resolution: $retina-dppx) {
+          background-image: url("../img/icon-900-tablet@2x.png");
+        }
       }
     }
 
@@ -224,6 +252,11 @@
       &::before {
         background-image: url("../img/icon-70-tablet@1x.png");
         top: 5px;
+        width: 59px;
+
+        @media (min-resolution: $retina-dppx) {
+          background-image: url("../img/icon-70-tablet@2x.png");
+        }
       }
     }
 
@@ -234,6 +267,10 @@
         background-image: url("../img/icon-350-tablet@1x.png");
         left: 0;
         top: 7px;
+
+        @media (min-resolution: $retina-dppx) {
+          background-image: url("../img/icon-350-tablet@2x.png");
+        }
       }
     }
 
@@ -242,6 +279,11 @@
 
       &::before {
         background-image: url("../img/icon-5-tablet@1x.png");
+        width: 59px;
+
+        @media (min-resolution: $retina-dppx) {
+          background-image: url("../img/icon-5-tablet@2x.png");
+        }
       }
     }
   }
@@ -272,24 +314,40 @@
 
       &::before {
         background-image: url("../img/icon-900-mobile@1x.png");
+
+        @media (min-resolution: $retina-dppx) {
+          background-image: url("../img/icon-900-mobile@2x.png");
+        }
       }
     }
 
     &--parking {
       &::before {
         background-image: url("../img/icon-70-mobile@1x.png");
+
+        @media (min-resolution: $retina-dppx) {
+          background-image: url("../img/icon-70-mobile@2x.png");
+        }
       }
     }
 
     &--comfort {
       &::before {
         background-image: url("../img/icon-350-mobile@1x.png");
+
+        @media (min-resolution: $retina-dppx) {
+          background-image: url("../img/icon-350-mobile@2x.png");
+        }
       }
     }
 
     &--practice {
       &::before {
         background-image: url("../img/icon-5-mobile@1x.png");
+
+        @media (min-resolution: $retina-dppx) {
+          background-image: url("../img/icon-5-mobile@2x.png");
+        }
       }
     }
   }
