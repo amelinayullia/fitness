@@ -154,7 +154,8 @@
     width: 31%;
     margin-right: 3.5%;
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-image-source: linear-gradient(111.72deg,$vivid-red 17.6%,$strong-blue 95.31%);
       border-image-slice: 1;
       border-width: 7px;

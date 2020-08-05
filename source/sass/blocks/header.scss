@@ -242,7 +242,8 @@
 
 .header__line a,
 .header__social a {
-  &:hover {
+  &:hover,
+  &:focus {
     color: $light-dark-blue;
   }
 }
