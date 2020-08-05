@@ -79,6 +79,11 @@
   outline: none;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
   @media (max-width: $bp-tablet) {
     top: 218px;
   }
