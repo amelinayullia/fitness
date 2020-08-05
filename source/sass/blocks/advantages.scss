@@ -24,6 +24,16 @@
       line-height: 42px;
     }
   }
+
+  @media (max-width: $bp-mobile) {
+    padding-top: 70px;
+    padding-bottom: 25px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
 }
 
 .advantages__inner {
@@ -36,9 +46,9 @@
 
   @media (max-width: $bp-tablet) {
     flex-direction: column;
-    justify-content: space-between;
     min-width: 100%;
     min-height: 460px;
+    margin-top: 47px;
   }
 }
 
@@ -53,7 +63,14 @@
   }
 
   @media (max-width: $bp-tablet) {
-    margin: 0;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $bp-mobile) {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    min-height: 260px;
   }
 }
 
@@ -87,9 +104,36 @@
   }
 
   @media (max-width: $bp-tablet) {
+    position: relative;
     min-width: 442px;
     min-height: 240px;
-    top: 95px;
+    top: 0;
+    padding: 14px 126px;
+    margin-top: 45px;
+    margin-bottom: 38px;
+
+    h3 {
+      font-size: 22px;
+    }
+
+    p {
+      margin-top: 17px;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    margin-top: 0;
+    min-width: 320px;
+    padding: 29px 70px;
+    margin-bottom: 45px;
+
+    span {
+      line-height: 90px;
+    }
+
+    p {
+      margin-top: 10px;
+    }
   }
 }
 
@@ -143,16 +187,110 @@
 
   &--parking {
     &::before {
-      background-image: url("../../img/icon-70@1x.png");
+      background-image: url("../img/icon-70@1x.png");
       background-repeat: no-repeat;
     }
   }
 
   &--practice {
     &::before {
-      background-image: url("../../img/icon5@1x.png");
+      background-image: url("../img/icon5@1x.png");
       background-repeat: no-repeat;
       top: 8px;
+    }
+  }
+
+  @media (max-width: $bp-tablet) {
+    max-width: 325px;
+
+    p {
+      margin: 0;
+    }
+
+    &--space {
+      padding-left: 116px;
+      padding-right: 22px;
+
+      &::before {
+        background-image: url("../img/icon-900-tablet@1x.png");
+        left: 0;
+        top: 5px;
+      }
+    }
+
+    &--parking {
+      padding-left: 92px;
+
+      &::before {
+        background-image: url("../img/icon-70-tablet@1x.png");
+        top: 5px;
+      }
+    }
+
+    &--comfort {
+      padding-left: 120px;
+
+      &::before {
+        background-image: url("../img/icon-350-tablet@1x.png");
+        left: 0;
+        top: 7px;
+      }
+    }
+
+    &--practice {
+      padding-left: 88px;
+
+      &::before {
+        background-image: url("../img/icon-5-tablet@1x.png");
+      }
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    padding: 0;
+    max-width: 227px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+
+    &::before {
+      left: 50%;
+      transform: translate(-50%);
+      background-position: top;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 150%;
+    }
+
+    &--space {
+      padding-left: 22px;
+      padding-right: 22px;
+
+      &::before {
+        background-image: url("../img/icon-900-mobile@1x.png");
+      }
+    }
+
+    &--parking {
+      &::before {
+        background-image: url("../img/icon-70-mobile@1x.png");
+      }
+    }
+
+    &--comfort {
+      &::before {
+        background-image: url("../img/icon-350-mobile@1x.png");
+      }
+    }
+
+    &--practice {
+      &::before {
+        background-image: url("../img/icon-5-mobile@1x.png");
+      }
     }
   }
 }
