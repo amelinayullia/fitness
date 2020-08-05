@@ -1,0 +1,282 @@
+.promotions {
+  margin-bottom: 119px;
+  padding-top: 110px;
+
+  h2 {
+    @include title;
+    color: $very-dark-blue;
+    margin-bottom: 55px;
+    text-align: center;
+  }
+
+  @media (max-width: $bp-tablet) {
+    margin-bottom: 98px;
+    padding-top: 89px;
+
+    h2 {
+      font-size: 42px;
+      margin-bottom: 41px;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    margin-bottom: 68px;
+    padding-top: 55px;
+
+    h2 {
+      font-size: 32px;
+    }
+  }
+}
+
+.promotions__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: $bp-mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.promotions__year {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: auto;
+
+  &:first-child {
+    margin-right: 40px;
+  }
+
+  @media (max-width: $bp-tablet) {
+    &:first-child {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    display: block;
+  }
+}
+
+.promotions__year-inner {
+  position: relative;
+  max-width: 280px;
+  min-height: 462px;
+  padding: 42px 45px;
+  background-color: #ed0233;
+  color: $white;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 19px;
+    font-size: 28px;
+  }
+
+  span {
+    display: block;
+    margin-top: 2px;
+    font-size: 70px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  a {
+    margin-top: 187px;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      height: 1px;
+      bottom: 0;
+      width: 78px;
+      background-color: white;
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    min-height: 300px;
+    max-width: 290px;
+    text-align: center;
+
+    h3 {
+      margin-bottom: 16px;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    a {
+      margin-top: 28px;
+      width: auto;
+
+      &::after {
+        transform: translateX(-50%);
+        left: 50%;
+      }
+    }
+  }
+}
+
+.promotions__img {
+  width: 280px;
+  min-height: 462px;
+
+  @media (max-width: $bp-tablet) {
+    width: 399px;
+  }
+
+  @media (max-width: $bp-mobile) {
+    width: 290px;
+    min-height: 299px;
+  }
+}
+
+.promotions__rest {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $very-blue;
+
+  p {
+    margin: 0;
+    margin-bottom: 69px;
+    line-height: 22px;
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 4px;
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  li {
+    @include list-reset;
+    margin-bottom: 38px;
+    padding: 18px 28px;
+    padding-bottom: 30px;
+    width: 560px;
+    min-height: 212px;
+    // height: auto;
+    border: 7px solid $very-blue;
+    border-image: linear-gradient(to bottom right,$strong-red,$dark-blue);
+    border-image-slice: 1;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    position: relative;
+    display: block;
+    // width: 80px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      height: 1px;
+      bottom: -1px;
+      width: 69px;
+      background-color: $very-blue;
+    }
+  }
+
+  @media (max-width: $bp-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    li:first-child p {
+      width: 160px;
+      margin-bottom: 47px;
+    }
+
+    li {
+      margin: 0;
+      margin-right: 30px;
+      width: 324px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: $bp-mobile) {
+    flex-direction: column;
+
+    h3 {
+      text-align: center;
+      margin: 0;
+    }
+
+    a {
+      margin-top: 28px;
+      text-align: center;
+
+      &::after {
+        transform: translateX(-50%);
+        left: 50%;
+      }
+    }
+
+    li:first-child p {
+      width: 100%;
+      margin-bottom: 27px;
+    }
+
+    p {
+      margin-bottom: 25px;
+      width: auto;
+      text-align: center;
+    }
+
+    li {
+      padding: 29px 28px 40px;
+      margin: 0;
+      margin-bottom: 28px;
+      max-width: 290px;
+    }
+  }
+}
