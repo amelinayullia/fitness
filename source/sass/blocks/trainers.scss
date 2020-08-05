@@ -140,11 +140,22 @@
   }
 
   li {
+    @include list-reset;
     font-size: 14px;
     line-height: 21px;
-    margin: 0;
     margin-bottom: 15px;
-    list-style-type: disc;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background-color: $white;
+      border-radius: 50%;
+      top: 10px;
+      left: -15px;
+    }
   }
 
   @media (max-width: $bp-tablet) {
@@ -155,6 +166,10 @@
 
     li {
       margin-bottom: 14px;
+
+      &::before {
+        top: 8px;
+      }
     }
   }
 
