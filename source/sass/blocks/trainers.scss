@@ -122,7 +122,7 @@
   height: 100%;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 19%;
   background: rgba(16,38,84,0.89);
   border: 1px solid $black;
 
@@ -134,7 +134,7 @@
 
   ul {
     padding: 0;
-    margin-top: 36px;
+    margin-top: 14%;
     max-width: 170px;
     padding-left: 25px;
   }
@@ -143,7 +143,7 @@
     @include list-reset;
     font-size: 14px;
     line-height: 21px;
-    margin-bottom: 15px;
+    margin-bottom: 9%;
     position: relative;
 
     &::before {
