@@ -545,27 +545,51 @@
 
       <section class="reviews container">
         <h2>Отзывы</h2>
-        <div class="reviews__block">
-          <button class="reviews__button-previous" type="button"></button>
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="./img/photo-reviews-anna@1x.webp, ./img/photo-reviews-anna@2x.webp 2x">
-            <source type="image/webp"
-              srcset="./img/photo-reviews-anna-mobile@1x.webp, ./img/photo-reviews-anna-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)"
-              srcset="./img/photo-reviews-anna@1x.jpg, ./imgphoto-reviews-anna@2x.jpg 2x">
-            <img src="./img/photo-reviews-anna-mobile@1x.jpg" srcset="./img/photo-reviews-anna-mobile@2x.jpg 2x"
-              alt="аватарка автора" width="68" height="68">
-          </picture>
-          <div class="reviews__comments">
-            <h3>Анна Орлова</h3>
-            <p>
-              «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
-              дружелюбный. Зал просторный, даже в вечернее время нет очередей»
-            </p>
-          </div>
-          <button class="reviews__button-next" type="button"></button>
+        <button class="reviews__button-previous" type="button"></button>
+        <div class="reviews__block swiper-container">
+          <ul class="reviews__list swiper-wrapper">
+            <li class="swiper-slide reviews__item">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="./img/photo-reviews-anna@1x.webp, ./img/photo-reviews-anna@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/photo-reviews-anna-mobile@1x.webp, ./img/photo-reviews-anna-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="./img/photo-reviews-anna@1x.jpg, ./imgphoto-reviews-anna@2x.jpg 2x">
+                <img src="./img/photo-reviews-anna-mobile@1x.jpg" srcset="./img/photo-reviews-anna-mobile@2x.jpg 2x"
+                  alt="аватарка автора" width="68" height="68">
+              </picture>
+              <div class="reviews__comments">
+                <h3>Анна Орлова</h3>
+                <p>
+                  «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                  дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                </p>
+              </div>
+            </li>
+
+            <li class="swiper-slide reviews__item">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="./img/photo-reviews-anna@1x.webp, ./img/photo-reviews-anna@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/photo-reviews-anna-mobile@1x.webp, ./img/photo-reviews-anna-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="./img/photo-reviews-anna@1x.jpg, ./imgphoto-reviews-anna@2x.jpg 2x">
+                <img src="./img/photo-reviews-anna-mobile@1x.jpg" srcset="./img/photo-reviews-anna-mobile@2x.jpg 2x"
+                  alt="аватарка автора" width="68" height="68">
+              </picture>
+              <div class="reviews__comments">
+                <h3>Анна Орлова</h3>
+                <p>
+                  «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                  дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
+        <button class="reviews__button-next" type="button"></button>
       </section>
     </main>
     <script src="js/vendor.js"></script>

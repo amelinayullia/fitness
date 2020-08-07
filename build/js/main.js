@@ -25,7 +25,7 @@ if (subscriptionLinks.length) {
   });
 }
 
-var swiper = new Swiper(".swiper-container", {
+var trainerSlider = new Swiper(".trainers__inner", {
   breakpoints: {
     1200: {
       slidesPerView: 4,
@@ -45,3 +45,10 @@ var swiper = new Swiper(".swiper-container", {
     prevEl: ".trainers__button-previous",
   },
 });
+
+var reviewsSliders = new Swiper('.reviews__block', {
+  navigation: {
+    nextEl: ".reviews__button-next",
+    prevEl: ".reviews__button-previous",
+  },
+})
