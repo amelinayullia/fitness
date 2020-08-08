@@ -10,7 +10,7 @@
   h2 {
     @include title;
     color: $very-dark-blue;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 
   @media (max-width: $bp-tablet) {
@@ -125,7 +125,7 @@
   height: 22px;
   border-bottom: 1px solid $gray;
   border-right: 1px solid $gray;
-  top: 210px;
+  top: 212px;
   outline: none;
   cursor: pointer;
 
@@ -142,7 +142,7 @@
 }
 
 .reviews__button-previous {
-  left: 40px;
+  left: 50px;
   transform: rotate(135deg);
 
   @media (max-width: $bp-tablet) {
@@ -157,7 +157,7 @@
 }
 
 .reviews__button-next {
-  right: 40px;
+  right: 50px;
   transform: rotate(-45deg);
 
   @media (max-width: $bp-tablet) {
