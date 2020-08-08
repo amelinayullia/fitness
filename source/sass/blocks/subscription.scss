@@ -220,7 +220,8 @@
     text-transform: uppercase;
     box-shadow: 0 0 0 2px $very-dark-blue;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: linear-gradient(111.72deg,$vivid-red 17.6%,$strong-blue 95.31%);
       color: $white;
       box-shadow: none;
