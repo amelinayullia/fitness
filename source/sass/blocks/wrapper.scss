@@ -218,6 +218,11 @@
 
   a {
     display: block;
+
+    &:hover,
+    &:focus {
+      color: $light-dark-blue;
+    }
   }
 
   p,

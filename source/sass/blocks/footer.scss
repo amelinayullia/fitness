@@ -69,6 +69,11 @@
   li {
     margin-right: 40px;
 
+    &:hover,
+    &:focus {
+      color: $grayish-blue;
+    }
+
     &:last-child {
       margin: 0;
     }
@@ -137,6 +142,11 @@
   }
 
   svg {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
     &.footer__icon-vk {
       width: 24px;
       height: 13px;
