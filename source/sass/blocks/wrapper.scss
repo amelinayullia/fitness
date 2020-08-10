@@ -72,9 +72,14 @@
     font-size: 14px;
     line-height: 16px;
     padding-bottom: 5px;
+    outline: none;
 
     &::placeholder {
       color: $white;
+    }
+
+    &.error:not(.hackselector) {
+      box-shadow: 0 0 0 2px red;
     }
   }
 
