@@ -190,12 +190,10 @@
   &::before {
     content: "";
     position: absolute;
-    width: 102px;
-    height: 0;
+    height: 100%;
     border: 1px solid $grayish-blue;
-    top: 60px;
-    left: 180px;
-    transform: rotate(90deg);
+    top: 0;
+    left: 230px;
   }
 
   ul {
