@@ -10,7 +10,7 @@
   h2 {
     @include title;
     color: $very-dark-blue;
-    margin-bottom: 53px;
+    margin-bottom: 50px;
   }
 
   @media (max-width: $bp-tablet) {
