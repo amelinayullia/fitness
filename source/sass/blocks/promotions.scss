@@ -1,6 +1,6 @@
 .promotions {
   margin-bottom: 119px;
-  padding-top: 110px;
+  padding-top: 112px;
 
   h2 {
     @include title;
@@ -76,7 +76,7 @@
 
   h3 {
     margin: 0;
-    margin-bottom: 19px;
+    margin-bottom: 22px;
     font-size: 28px;
   }
 
@@ -97,7 +97,7 @@
     margin-top: 187px;
     font-size: 14px;
     position: relative;
-    display: block;
+    display: inline-block;
     line-height: 1.4;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -114,7 +114,7 @@
       left: 0;
       height: 1px;
       bottom: 0;
-      width: 78px;
+      width: 100%;
       background-color: white;
     }
   }
@@ -146,7 +146,10 @@
 
 .promotions__img {
   width: 280px;
-  min-height: 462px;
+
+  img {
+    height: 100%;
+  }
 
   @media (max-width: $bp-tablet) {
     width: 399px;
@@ -154,7 +157,6 @@
 
   @media (max-width: $bp-mobile) {
     width: 290px;
-    min-height: 299px;
   }
 }
 
@@ -185,7 +187,6 @@
     padding-bottom: 30px;
     width: 560px;
     min-height: 212px;
-    // height: auto;
     border: 7px solid $very-blue;
     border-image: linear-gradient(to bottom right,$strong-red,$dark-blue);
     border-image-slice: 1;
@@ -197,11 +198,10 @@
 
   a {
     position: relative;
-    display: block;
-    // width: 80px;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
 
     &:hover,
@@ -216,7 +216,7 @@
       left: 0;
       height: 1px;
       bottom: -1px;
-      width: 69px;
+      width: 100%;
       background-color: $very-blue;
     }
   }
@@ -246,14 +246,20 @@
   @media (max-width: $bp-mobile) {
     flex-direction: column;
 
-    h3 {
+    li {
+      padding: 29px 28px 40px;
+      margin: 0;
+      margin-bottom: 28px;
+      max-width: 290px;
       text-align: center;
+    }
+
+    h3 {
       margin: 0;
     }
 
     a {
       margin-top: 28px;
-      text-align: center;
 
       &::after {
         transform: translateX(-50%);
@@ -269,14 +275,6 @@
     p {
       margin-bottom: 25px;
       width: auto;
-      text-align: center;
-    }
-
-    li {
-      padding: 29px 28px 40px;
-      margin: 0;
-      margin-bottom: 28px;
-      max-width: 290px;
     }
   }
 }
