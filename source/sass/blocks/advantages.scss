@@ -110,27 +110,21 @@
   transform: translate(-50%);
   min-height: 307px;
 
+  h3 {
+    font-size: 26px;
+    margin: 0;
+  }
+
   span {
     font-weight: bold;
     font-size: 74px;
     line-height: 100px;
   }
 
-  &.advantages__card-title p {
-    font-size: 26px;
-    margin: 0;
-  }
-
   p {
     line-height: 24px;
     margin: 0;
     margin-top: 38px;
-
-    &.advantages__card-title {
-      font-size: 26px;
-      font-weight: 700;
-      margin: 0;
-    }
   }
 
   @media (max-width: $bp-tablet) {
@@ -142,12 +136,12 @@
     margin-top: 45px;
     margin-bottom: 38px;
 
+    h3 {
+      font-size: 22px;
+    }
+
     p {
       margin-top: 17px;
-
-      &.advantages__card-title {
-        font-size: 22px;
-      }
     }
   }
 

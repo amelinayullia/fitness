@@ -32,6 +32,7 @@
   display: flex;
   justify-content: center;
   margin: auto;
+  max-width: 1366px;
 
   @media (max-width: $bp-tablet) {
     flex-direction: column;
