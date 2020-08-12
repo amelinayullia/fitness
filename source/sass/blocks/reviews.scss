@@ -56,7 +56,7 @@
   background-color: $very-blue;
   box-shadow: 0 0 40px rgba(28,51,116,0.2);
   padding: 56px 60px;
-  height: 242px;
+  min-height: 242px;
 
   picture {
     margin-top: 7px;
