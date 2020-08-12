@@ -21,10 +21,11 @@
 
   @media (max-width: $bp-mobile) {
     margin-bottom: 68px;
-    padding-top: 55px;
+    padding-top: 57px;
 
     h2 {
       font-size: 32px;
+      margin-bottom: 38px;
     }
   }
 }
@@ -63,6 +64,10 @@
 
   @media (max-width: $bp-mobile) {
     display: block;
+
+    &:first-child {
+      margin-bottom: 28px;
+    }
   }
 }
 
@@ -133,7 +138,7 @@
     }
 
     a {
-      margin-top: 28px;
+      margin-top: 31px;
       width: auto;
 
       &::after {
@@ -257,6 +262,7 @@
 
     h3 {
       margin: 0;
+      line-height: 42px;
     }
 
     a {
@@ -270,7 +276,7 @@
 
     li:first-child p {
       width: 100%;
-      margin-bottom: 27px;
+      margin-bottom: 25px;
     }
 
     p {

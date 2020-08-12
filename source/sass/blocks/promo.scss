@@ -107,6 +107,20 @@
       }
     }
   }
+
+  @media (max-width: $bp-mobile) {
+    h2 {
+      line-height: 50px;
+    }
+
+    span {
+      line-height: 17px;
+    }
+
+    time {
+      line-height: 34px;
+    }
+  }
 }
 
 .promo__about {
