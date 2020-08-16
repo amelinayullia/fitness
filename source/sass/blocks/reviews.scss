@@ -56,7 +56,7 @@
   background-color: $very-blue;
   box-shadow: 0 0 40px rgba(28,51,116,0.2);
   padding: 56px 60px;
-  min-height: 242px;
+  height: auto;
 
   picture {
     margin-top: 7px;
@@ -70,7 +70,7 @@
 
   @media (max-width: $bp-mobile) {
     padding: 40px 25px;
-    height: 335px;
+    padding-bottom: 35px;
 
     picture {
       margin-top: 0;
